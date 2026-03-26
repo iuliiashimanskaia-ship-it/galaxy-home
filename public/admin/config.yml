@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: iuliiashimanskaia-ship-it/galaxy-home # Твой репозиторий
-  branch: master # Или main, проверь как называется ветка
+  repo: iuliiashimanskaia-ship-it/galaxy-home
+  branch: master # Если в GitHub ветка называется main, замени master на main
 
 media_folder: "public/images"
 public_folder: "/images"
