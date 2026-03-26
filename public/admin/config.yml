@@ -1,17 +1,19 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: iuliiashimanskaia-ship-it/galaxy-home # Твой репозиторий
+  branch: master # Или main, проверь как называется ветка
 
-media_folder: "public/assets"
-public_folder: "/assets"
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
   - name: "houses"
     label: "Наши дома (Товары)"
-    folder: "src/data" # Здесь будут лежать данные о домах
+    folder: "src/content/houses"
     create: true
+    slug: "{{slug}}"
     fields:
-      - {label: "Название", name: "title", widget: "string"}
-      - {label: "Цена", name: "price", widget: "string"}
-      - {label: "Описание", name: "description", widget: "text"}
-      - {label: "Фото", name: "image", widget: "image"}
+      - { label: "Название", name: "title", widget: "string" }
+      - { label: "Цена", name: "price", widget: "number" }
+      - { label: "Описание", name: "body", widget: "markdown" }
+      - { label: "Фото", name: "image", widget: "image" }
