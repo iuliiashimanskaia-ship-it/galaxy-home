@@ -10,7 +10,7 @@ const features = [
   {
     icon: Shield,
     title: 'Гарантия качества',
-    description: '2 года гарантии на конструкцию дома',
+    description: '15 лет гарантии на конструкцию дома',
   },
   {
     icon: Clock,
