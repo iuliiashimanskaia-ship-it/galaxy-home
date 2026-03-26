@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "public/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "houses"
+    label: "Наши дома (Товары)"
+    folder: "src/data" # Здесь будут лежать данные о домах
+    create: true
+    fields:
+      - {label: "Название", name: "title", widget: "string"}
+      - {label: "Цена", name: "price", widget: "string"}
+      - {label: "Описание", name: "description", widget: "text"}
+      - {label: "Фото", name: "image", widget: "image"}
